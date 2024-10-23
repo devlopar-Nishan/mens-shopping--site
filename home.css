@@ -1,0 +1,999 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+/* header */
+ 
+.active{
+ 
+  color: red !important;
+}
+.header{
+ 
+  
+    
+    background-color: #E3E6F3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.rowy{
+    display: flex;
+    justify-content: space-between;
+}
+
+ 
+.head-{
+    
+}
+.baricon{
+    display: none;
+     
+}
+.crossbar{
+ margin-left: -116px;
+ display: none;
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+}
+.menu{ 
+}
+.menusub{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    
+    align-items: center;
+   
+     
+}
+.menu-list{
+  
+ 
+}
+.menu-list ul {
+    display: flex;
+    margin-right: 1.5rem;
+}
+.menu-list ul li {
+    list-style: none;
+    margin-left: 2rem;
+}
+ 
+.menu-list ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.menu-list ul li:nth-child(3){
+    position: relative;
+}
+.menu-list ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 170%;
+}
+.menu-list ul li  ul{
+    background: #E3E6F3;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -72px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .7s;
+}
+.menu-list ul li ul li{
+    list-style: none;
+    width: 200px;
+    margin-left: 0;
+    
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+.menu-list ul li ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+.menu-search input {
+    width: 20rem;
+    outline: none;
+    border: none;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0,.3);
+    border-radius: 22px;
+    padding: .5rem;
+    margin-bottom: .9rem;
+    margin-right: 1rem;
+     
+ 
+}
+ .menu-search{
+    position: relative;
+ }
+.searc-icon{
+    position: absolute;
+    top: 10px;
+   
+    right: 31px;
+}
+.menu-button button{
+    margin-bottom: 11px;
+    background: rgb(209, 38, 38);
+    width: 130px;
+   
+}
+
+
+
+/* header */
+/* header */
+/* header */
+.card-div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.feature {
+    margin-top: 35px;
+}
+.card {
+    height: 22rem;
+    width: 19rem;
+    background: #ffffff;
+     margin-top: 3rem;
+     box-shadow: 2px 3px 5px 4px rgba(0,0,0,.5);
+}
+.cardimg2 img {
+    height: 13rem;
+    width: auto;
+    margin-left: 4rem;
+    margin-top: 0.5rem;
+    
+}
+ .cardtext {
+        margin-left: 2rem;
+        margin-top: 1rem;
+ }
+ 
+ .feature small {
+    font-size: 1.3rem;
+    color: gray;
+}
+.feature h1{
+    font-size: 3rem;
+}
+.card-heading {
+    font-size: 1.3rem;
+}
+
+/* banner section css code */
+.banner-section  {
+    margin-top: 63px;
+    background-image:url("images\ \(25\).jpeg") ;
+    width:auto;
+    height: 500px;
+   
+    background-size:  cover;
+   
+     
+
+}
+.bannerText {
+  position: absolute;
+  top: 70px;
+  left: -100%;
+} 
+.goleft{
+    left: 7%;
+    transition: 1s;
+}
+.bannerText p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.bannerHeading1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+.bannerHeading2{
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgb(17, 179, 125);
+    text-shadow: 1px 3px 4px rgba(20, 19, 19, 0.8);
+}
+.bannerBaton{
+    
+        height: 36px;
+        width: 142px;
+        font-weight: 500;
+        color: #fff;
+        border-radius:5px;
+        margin-top:5px;
+        background-color: rgb(215, 28, 28);
+        border: none;
+    
+}
+
+/* this is up comming section csss */
+
+.sbarTEX h2,p {
+    color: #fff;
+}
+ 
+
+
+/* this is up comming section csss */
+
+
+
+
+/* footer css styler code  */
+/* footer css styler code  */
+.footdiv0,.footdiv1,.footdiv2,.footdiv3{
+    margin-top: 2rem;
+}
+
+.footer{
+    background: rgba(227, 230, 243,.4); 
+}
+.footdiv1 a,.footdiv2 a{
+    text-decoration: none;
+    color: gray;
+  
+  }
+  .footdiv3 button:nth-child(1){
+    font-size: 22px;
+      font-weight: 700;
+    background: #fff;
+    padding: 4px 32px;
+      border: 2px solid green;
+      border-radius: 5px;
+      box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, .4);
+  }
+  
+   
+  .footdiv3 button:nth-child(2){
+    font-size: 22px;
+      font-weight: 700;
+    background: #c7ebc0;
+    padding: 4px 14px;
+      border: 2px solid green;
+      border-radius: 5px;
+      box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, .4);
+  }
+  .foot-button {
+     text-align: left; 
+  
+  }
+  .roome{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+
+
+/* footer css styler code  */
+/* footer css styler code  */
+
+
+/*  */
+/* this is half-banner css */
+
+.room1{
+    display: flex;
+    justify-content: space-between;
+}
+.haf-benar img{
+    height: 23rem;
+    border-radius: .4rem;
+}
+.haf-benar{
+    position: relative;
+}
+.haf-tex {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    width: 75%;
+}
+.haf-benar:hover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0,.2);
+    transition: .6s;
+  }
+  .haf-tex button{
+    background: rgb(220, 28, 28);
+    width: 146px;
+  }
+  .haf-tex button:hover{
+    background-color: #fff;
+  }
+  .haf-tex p{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+     
+      
+  }
+  
+
+
+
+
+
+
+/* this is half-banner css */
+/*  
+/* 
+/ 
+/* 
+
+
+
+/* this is 3card section */
+
+
+.room2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.smallbar{
+    position: relative;
+    overflow: hidden;
+}
+.sbarTEX {
+    position: absolute;
+    bottom: -90px;
+    left: 1rem;
+}
+.leftgo{
+     bottom: 20px;
+     transition: 1s;
+}
+
+.smallbar img {
+    max-width: 100%;
+    height: 15rem;
+    border-radius: .6rem;
+}
+/* this is 3card section */
+
+.contruct-show{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    position: relative;
+}
+.contuc-item li{
+    list-style: none;
+    margin-top: 2rem;
+    position: relative;
+    
+     
+     
+
+
+}
+.contuc-item li span{
+    margin-right: 15px;
+}
+.contuc-item li::before{
+ content: '';
+ position: absolute;
+ left: -41px;
+ top: 3px;
+ height: 20px;
+ width: 20px;
+ border-radius: 50%;
+ border: 1px solid black;
+ background:  #fff;
+}
+.contuc-item::before{
+    content: '';
+    height: 11rem;
+    width: 2px;
+    position: absolute;
+ 
+    left: 0;
+    background: gray;
+}
+/* this is watch csss */
+.watchShowroom{
+    background: none;
+}
+  
+ 
+.watchImg:hover img{
+    transition: .7s;
+  transform: scale(1.1);
+}
+ 
+.watch-img img{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:70%;
+    filter: drop-shadow(3px 3px 10px #3c3939);
+
+}
+.watchItem{
+    box-shadow: 5px 5px 7px #ddd;
+    border-radius: 5px ;
+    background: rgba(229, 216, 216,.3);
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.watchItem img{
+    filter: drop-shadow(-5px 5px 12px #fff);
+}
+.watchDiscription{
+    margin-left: 10px;
+}
+.allwatch{
+    display: grid;
+  
+    grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+    gap: 10px;
+    
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width:1200px) {
+    .menu-button button {
+      
+        width: 7rem;
+    }
+    .menu-search input {
+        width: 17rem;
+       
+    }
+    .menu-list ul li a {
+        
+        font-size: 1rem;
+      
+    }
+    .menu-list ul li {
+      
+        margin-left: 1.5rem;
+    }
+    /* haf banner css responsive */
+    .haf-benar img {
+        height: 19rem;
+    }
+    .haf-tex p {
+        font-size: 16px;
+         
+    }
+    .haf-tex {
+       
+        top: 6rem;
+         
+    }
+    .feature h1 {
+        font-size: 2.6rem;
+    }
+    .feature small {
+        font-size: 1rem;
+        
+    }
+    .smallbar img {
+        
+        height: 12.7rem;
+       
+    }
+    .sbarTEX h2{
+      
+      font-size: 1.6rem;
+        
+    }
+    
+}
+
+@media  (max-width:1100px) {
+    .feature small {
+        font-size: 1.3rem;
+        color: gray;
+    }
+    .bannerHeading1 {
+        font-weight: 500;
+        font-size: 2.3rem;
+    }
+    .bannerText p {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .banner-section {
+        background-position: bottom;
+        height: 20rem;
+    }
+    .bannerText {
+        
+        top: 2rem;
+    }
+    
+}
+
+@media ( max-width:1000px) {
+    .menu-button button {
+        width: 5rem;
+    }
+    .menu-search input {
+        width: 12rem;
+        margin-right: 0.5rem;
+        padding: 0.4rem;
+    }
+    .menu-list ul li a {
+        font-size: .9rem;
+    }
+    .menu-list ul li {
+        margin-left: 1rem;
+    }
+    .footdiv3 button:nth-child(2) {
+        font-size: 1.2rem;
+        font-weight: 500;
+       
+        padding: 4px 4px;
+        
+    }
+    .footdiv3 button:nth-child(1) {
+        font-size: 1.35rem;
+        font-weight: 500;
+       
+        padding: 4px 9px;
+       
+    }
+    .footdiv1 a, .footdiv2 a {
+      
+        font-size: .9rem;
+    }
+    .footdiv3 p{
+        font-size: 0.9rem;
+    }
+    /* this is haf banner responsive css */
+    .haf-tex p {
+        font-size: 15px;
+    }
+    .haf-tex button {
+        
+        width: 116px;
+    }
+    .haf-benar img {
+        height: 14rem;
+    }
+    .haf-tex {
+        top: 2rem;
+    }
+    .smallbar img {
+        height: 8.7rem;
+    }
+    .sbarTEX {
+        
+        top: 4rem; 
+    }
+    .sbarTEX h2 {
+        font-size: 1.1rem;
+    }
+    /* shop2.cssljfldsjfjlfjll */
+    .itemheading h1 {
+        font-size: 1.3rem  !important;
+    }
+    .iteminput select {
+        height: 3rem;
+        width: 6rem !important;
+        
+    }
+    .addcartbutton{
+        height: 3rem;
+        width: 6rem !important;
+        
+        margin-left: 1rem !important;
+    }
+    /* .bigimg img {
+        height: 20rem !important;
+        width: 20rem !important;
+      
+    } */
+    /* .smallimgs img {
+        height: 5rem !important;
+        width: 4rem !important;
+        
+    } */
+    
+    
+
+    
+}
+@media  (max-width:768px) {
+    .rowy{
+        position: relative;
+    }
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: -230%;
+        transition: .8s;
+    }
+    .menucome{
+        left: 0;
+    }
+   
+    .menu::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -124px;
+        height: 100%;
+        width: 48rem;
+        background: #E3E6F3;
+    }
+    
+    .baricon {
+        display: inherit;
+        margin-top: .5rem;
+        margin-right: .4rem;
+    }
+    .crossbar{
+        display: inherit;
+        margin-left: 3rem;
+    }
+    .menusub{
+        
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .menu-list ul {
+        
+        flex-direction: column;
+      
+    }
+    .menu-list ul li {
+        margin-left: 1rem;
+        margin-top: .7rem;
+    }
+    .menu-search input {
+        width: 27rem;
+        margin-right: -21.5rem;
+        padding: 0.4rem;
+    }
+    .menu-button button {
+        width: 10rem;
+        margin-left: 5rem;
+    }
+    .card {
+        height: 20rem;
+        width: 15rem;
+        background: #ffffff;
+        margin-top: 2rem;
+    }
+.feature small {
+    font-size: 1rem;
+     
+}
+.card-heading {
+    font-size: 1rem;
+}
+.cardtext {
+    margin-left: 1rem;
+    margin-top: 0rem;
+}
+.cardimg2 img {
+    margin-left: 2rem;
+}
+.card-div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+ 
+.bannerHeading1 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+.banner-section {
+    
+    margin-top: 3rem;
+    height: 23rem;
+    transition:.6s;                              ;
+}
+.banercome{
+    margin-top: 24rem;
+     
+
+}
+
+.bannerBaton {
+    
+    margin-top: 11px !important;
+}
+.bannerText p {
+   
+    margin-bottom: 0 !important;
+ 
+}
+.bannerTextDown{
+    top: 23rem;
+}
+ 
+
+.footdiv1 a, .footdiv2 a {
+    
+    font-size: 0.87rem;
+}
+.footdiv3 p{
+    font-size: .87rem;
+}
+.roome {
+    
+    flex-wrap: wrap;
+}
+.footdiv3 button:nth-child(2) {
+    
+    width: 15rem;
+    margin-left: 14px;
+}
+.footdiv3 button:nth-child(1) {
+    
+    width: 16rem;
+}
+.feature h1 {
+    font-size: 2.3rem;
+}
+.room1 {
+ 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.hafbanner-2 {
+    margin-top: 1rem;
+    
+}
+.haf-benar img {
+    height: 21.5rem;
+     
+}
+.haf-tex {
+    top: 10rem;
+}
+.smallbar img {
+    height: 14.7rem;
+    width: 33rem;
+    margin-top: .7rem;
+}
+.room2 {
+   
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+}
+ .sbarimg-3{
+    margin-top: .7rem;
+ }
+ .sbarTEX {
+    top: 8rem;
+}
+ .sbarTEX h2 {
+    font-size: 2.4rem;
+}
+ 
+
+}
+@media (max-width:620px) {
+    .bannerHeading1 {
+     
+        font-size: 1.6rem;
+    }
+    .bannerText p {
+        
+        font-weight: 500;
+ 
+        width: 70% !important;
+    }
+    
+    .footdiv3 button:nth-child(1) {
+        padding: 3px 9px;
+        width: 15rem;
+    }
+     
+    .footdiv3 button:nth-child(2) {
+        padding: 4px 4px;
+        width: 14.6rem;
+        margin-left: 0.7rem;
+    }
+    .haf-benar img {
+        height: 20.5rem;
+    }
+    .smallbar img {
+        height: 15.7rem;
+        width: 31rem;
+        margin-top: .5rem;
+    }
+    .sbarTEX {
+        top: 9rem;
+    }
+    .sbarTEX h2 {
+        font-size: 2.4rem;
+    }
+}
+@media (max-width:530px) {
+    .bannerHeading1 {
+        
+        font-size: 1.7rem;
+    }
+    .bannerText p {
+        font-size: 0.98rem;
+        font-weight: 500;
+        margin-bottom: 0 !important;
+        width: 70% !important;
+    }
+    .cardimg2 img {
+        height: 14rem;
+        width: auto;
+        margin-left: 7rem;
+        margin-top: 0.5rem;
+    }
+    .card {
+        height: 21rem;
+        width: 31rem;
+        background: #ffffff;
+        margin-top: 2rem;
+    }
+    .card-heading {
+        font-size: 1.5rem;
+    }
+    .cardtext {
+      
+        margin-top: -1rem;
+    }
+    .footdiv3{
+        width: 100%;
+    }
+    .footdiv3 button:nth-child(1) {
+        
+        width: 100%;
+    }
+    .footdiv3 button:nth-child(2) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: .5rem;
+    }
+    .room1 {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .haf-benar img {
+        height: 17.5rem;
+         
+    }
+    .haf-tex {
+        top: 7rem;
+    }
+    .smallbar img {
+         
+        width: 27rem;
+        
+    }
+    .sbarTEX h2 {
+        font-size: 1.99rem;
+    }
+    .menu-search input {
+        width: 19rem;
+        margin-right: -13.5rem;
+        padding: 0.4rem;
+    }
+    
+
+    
+}
+@media (max-width:450px) {
+
+.bannerHeading1 {
+    font-size: 1.5rem;
+}
+.haf-benar img {
+    height: 15.5rem;
+    
+}
+.haf-tex {
+    top: 6rem;
+}
+.smallbar img {
+    width: 24rem;
+}
+.feature h1 {
+    font-size: 2rem;
+}
+.feature small {
+    font-size: 0.8rem;
+}
+ 
+}
+@media ( max-width:400px) {
+    .bannerText p {
+        font-size: 0.88rem;
+        
+    }
+    .bannerHeading1 {
+        font-size: 1.4rem;
+    }
+    .cardimg2 img {
+       
+        margin-left: 2rem;
+        
+    }
+    .card-heading {
+        font-size: 1.2rem;
+    }
+    .footdiv1,.footdiv2,.footdiv3{
+        margin-top: .5rem;
+    }
+    .copy-p{
+        font-size: .88rem; 
+    }
+    .haf-benar img {
+        height: 12.5rem;
+        width: 17rem;
+    }
+    .haf-tex p {
+        font-size: 13px;
+    }
+    .haf-tex {
+        top: 2.5rem;
+    }
+    .sbarTEX h2 {
+        font-size: 1.7rem;
+    }
+    .haf-tex button {
+        width: 99px;
+    }
+    .feature h1 {
+        font-size: 1.7rem;
+    }
+    .menu-search input {
+        width: 13rem;
+        margin-right: -7.5rem;
+        padding: 0.4rem;
+    }
+    
+}

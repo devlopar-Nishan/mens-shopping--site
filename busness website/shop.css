@@ -1,0 +1,238 @@
+
+*{
+    margin: 0;
+    padding: 0;
+ 
+   box-sizing: border-box;
+}
+ 
+.next{
+    display: flex;
+    justify-content:  center;
+     
+
+    align-items: center;
+}
+.next1{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1rem;
+    background: green;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 2rem;
+     
+
+}
+.mainshop{
+    display: flex;
+    justify-content: space-between;
+}
+.bigimg img {
+    height: 25rem;
+    width: 30rem;
+    padding: 1rem;
+    background: rgba(128, 128, 128,.4);
+    border-radius: .3rem;
+    
+}
+.smallimg{
+    display: flex;
+    justify-content: space-between;
+
+}
+.smallimgs img {
+    height: 8rem;
+    width: 7rem;
+    background: rgba(128, 128, 128,.4);
+    padding: .5rem;
+    border-radius: .3rem;
+}
+.aboutItem{
+    margin-left: 4rem;
+     
+}
+.iteminput{
+    display: flex;
+    margin-top: 1rem;
+
+}
+.iteminput select{
+    height: 3rem;
+    width: 8rem;
+    text-align: center;
+    border-radius: .3rem;
+    box-shadow: 1px 2px 3px 5px rgba(0, 0, 0,.4);
+}
+/* .price{
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid #ddd;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    box-shadow: 1px 2px 3px 5px rgba(0, 0, 0,.4);
+    font-size: 1.3rem;
+    font-weight: 500;
+} */
+.lorem-tex p,b{
+    color: black;
+    font-size: 1.5rem;
+    margin-top: .7rem;
+  
+ 
+     
+}
+
+.lorem-tex{
+    margin-top: 1.5rem;
+}
+.addcartbutton{
+    height: 3rem;
+    width: 8rem;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    box-shadow: 1px 2px 3px 5px rgba(0, 0, 0,.4);
+    margin-left: 3rem;
+    
+}
+@media (max-width:1400px) {
+    .itemheading h1{
+       font-size: 2.2rem;
+
+    }
+    .lorem-tex p {
+         
+        margin-top: .7rem;
+    }
+    
+}
+@media  (max-width:1200px) {
+    .itemheading h1 {
+        font-size: 1.5rem;
+    }
+    .lorem-tex p {
+        
+        font-size: 1.3rem;
+    }
+}
+@media  (max-width:1000px) {
+    /* .bigimg img {
+        height: 20rem !important;
+        width: 20rem !important;
+    } */
+    .bigimg img {
+     
+        width: 25rem;
+         
+    }
+    .smallimgs img {
+        height: 6rem;
+        width: 6rem;
+       
+    }
+    .lorem-tex p {
+        font-size: 1rem !important;
+        width: 100% !important;
+    }
+    
+}
+@media  (max-width:768px) {
+    .mainshop {
+         
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .bigimg img {
+        height: 30rem !important;
+        width: 43rem !important;
+    }
+    .smallimg {
+ 
+        justify-content: space-around;
+    }
+    .smallimgs img {
+        height: 9rem !important;
+        width: 7.7rem !important;
+    }
+    .lorem-tex p {
+        font-size: 1rem !important;
+        width: 100% !important;
+    }
+    .aboutItem {
+        margin-left: 0.7rem !important;
+        margin-top: 2rem;
+    }
+    .smallimg {
+        justify-content: space-between;
+    }
+    
+}
+@media (max-width:766px) {
+    .bigimg img {
+        height: 24rem !important;
+        width: 30rem !important;
+    }
+    .smallimgs img {
+        height: 9rem !important;
+        width: 6.8rem !important;
+    }
+
+    
+}
+@media (max-width:530px) {
+    .smallimg {
+        justify-content: space-between;
+    }
+ 
+    .bigimg img {
+        height: 24rem !important;
+        width: 26rem !important;
+    }
+.smallimgs img {
+    height: 6rem !important;
+    width: 6.3rem !important;
+}
+.aboutItem {
+    margin-left: 2.7rem !important;
+}
+}
+@media (max-width:450px) {
+    .bigimg img {
+        height: 20rem !important;
+        width: 21rem !important;
+    }
+    .smallimgs img {
+        height: 5rem !important;
+        width: 4.3rem !important;
+    }
+}
+
+@media (max-width:400px) {
+    .aboutItem {
+        margin-left: 6px !important;
+    }
+}
+
+@media  (max-width:380px) {
+    .bigimg img {
+        height: 16rem !important;
+        width: 16rem !important;
+    }
+    .smallimgs img {
+        height: 3rem !important;
+        width: 3.3rem !important;
+    }
+    .itemheading h1 {
+        font-size: 1rem  !important;
+    }
+    .aboutItem {
+        margin-left: 36px !important;
+    }
+}

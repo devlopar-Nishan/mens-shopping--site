@@ -1,0 +1,44 @@
+  <section class="shop-sell mt-5">
+        <div class="container"> 
+            <div class="mainshop">
+                <div class="showItem">
+                    <div class="bigimg">
+                        <img class="bigimage" src="c:\Users\windows 10\Pictures\Saved Pictures\38-white-dress-shirt-png-image.png" alt="">
+                    </div>
+                    <div class="smallimg mt-3">
+                        <div class="smallimgs"><img class="smallimgs1"src="c:\Users\windows 10\Pictures\Saved Pictures\Dress-Shirt-PNG-Free-Image.png" alt=""></div>
+                        <div class="smallimgs"><img class="smallimgs2"  src="c:\Users\windows 10\Pictures\Saved Pictures\Dress-Shirt-PNG-Transparent.png" alt=""></div>
+                        <div class="smallimgs"><img class="smallimgs3"  src="c:\Users\windows 10\Pictures\Saved Pictures\38-white-dress-shirt-png-image.png" alt=""></div>
+                        <div class="smallimgs"><img class="smallimgs4"  src="c:\Users\windows 10\Pictures\Saved Pictures\Dress-Shirt-PNG-Transparent-File.png" alt=""></div>
+                         
+                    </div>
+
+                </div>
+                <div class="aboutItem">
+                    <div class="itemheading">
+                        <h1>Mens Feshon shart collection.</h1>
+                        <h2 class="price">50$</h2>
+
+                    </div>
+                    <!-- <div class="price">price<div> -->
+                    <div class="iteminput">
+                        <select name="" id="">select sizes
+                            <option value="xl">M</option>
+                            <option value="xl">L</option>
+                            <option value="xl">XL</option>
+                            <option value="xl">XXL</option>
+                        </select>
+                        
+                        <button class="addcartbutton">Add to cart </button>
+                         
+
+                    </div>
+
+                    <div class="lorem-tex">
+                        <b class="mt-4">products details</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam id quas placeat quo quis aliquam aliquid? Officia reiciendis quia, tempore soluta inventore dolores recusandae unde, omnis amet similique molestias consequuntur magni sapiente incidunt. Molestias est recusandae quam! Sint veritatis iure culpa in vero corrupti inventore labore eligendi distinctio sequi quas, iste, provident nulla. Earum perspiciatis debitis officia   veniam voluptatum non officiis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>

@@ -1,0 +1,633 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.header{
+ 
+  
+    
+    background-color: #E3E6F3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+ 
+.head-container{
+    
+}
+.baricon{
+    display: none;
+     
+}
+.crossbar{
+ margin-left: -116px;
+ display: none;
+}
+.logo img{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-top: 6px
+   
+}
+.menu{ 
+}
+.menusub{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    
+    align-items: center;
+   
+     
+}
+.menu-list{
+  
+ 
+}
+.menu-list ul{
+    display: flex;
+ 
+    
+   
+     
+ 
+    
+}
+.menu-list ul li{
+    list-style: none;
+    margin-left: 40px;
+   
+     
+}
+.menu-list ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+.menu-search input{
+    width: 283px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0,.3);
+    border-radius: 22px;
+    
+    padding: 6px;
+    margin-bottom: 11px
+     
+
+}
+.menu-button button{
+    margin-bottom: 11px;
+    background: rgb(209, 38, 38);
+    width: 130px;
+   
+}
+ /* banner section css */
+.banner-section  {
+    margin-top: 63px;
+    background-image:url("images\ \(25\).jpeg") ;
+    width:auto;
+    height: 500px;
+   
+    background-size:  cover;
+   
+     
+
+}
+.bannerText {
+  position: absolute;
+  top: 70px;
+} 
+.bannerText p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+    
+}
+.bannerHeading1{
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.bannerHeading2{
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgb(17, 179, 125);
+    text-shadow: 1px 3px 4px rgba(20, 19, 19, 0.8);
+}
+.bannerBaton{
+    
+        height: 36px;
+        width: 142px;
+        font-weight: 500;
+        color: #fff;
+        border-radius:5px;
+        margin-top:5px;
+        background-color: rgb(215, 28, 28);
+        border: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this is banner clss */
+    
+ 
+
+  /*this is future section  */
+  .feature{
+    
+  }
+  .feature h1{
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+.feature small{
+  font-size: 20px;
+  color: gray;
+}
+  .card-section{
+    padding: 60PX;
+  }
+.cardbody{
+    box-shadow: 1px 2px 3px rgba(19, 18, 18,.5);
+    border-radius: 7px;
+    padding: 10px;
+}
+.cardimg img {
+    margin-left: 51px;
+    height: 245px;
+    width: 213px;
+}
+ 
+  .taitel{
+    margin-bottom: 0;
+  }
+ .card-heading{
+    font-size: 20px;
+ }
+ .caredtext small{
+    font-size: 30px;
+    font-weight: 700;
+ }
+ .caredtext {
+    margin-left: 20px;
+ }
+ .cardbody:hover{
+  box-shadow: 1px  5px 4px 3px rgba(19, 18, 18,.4);
+  transition: .6s;
+ }
+ .foot-button{
+  text-align: right;
+ }
+
+    
+
+
+
+
+ 
+
+  /*this is haf-banner section  */
+ 
+  .dobol{
+    
+  }
+  .haf-benar img{
+    height: 311px;
+    width: 100%;
+    border-radius: 5px;
+
+  }
+  .haf-benar{
+    position: relative;
+  }
+  .haf-tex{
+    
+    height: 100%;
+    width:352px;
+    position: absolute;
+    top: 133px;
+ 
+    left: -100%;
+    overflow: hidden;
+  }
+  .haf-tex p{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+     transition: .6s;
+  }
+  .minushaf{
+    left: 48px;
+    transition: .7s;
+  }
+  .haf-tex button{
+    background: rgb(220, 28, 28);
+    width: 146px;
+  }
+  .haf-benar:hover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0,.2);
+    transition: .6s;
+  }
+  .haf-tex button:hover{
+    background-color: #fff;
+  }
+  .smallbar{
+    position: relative;
+    margin-top: 30px;
+
+  }
+  .smallbar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+     
+  }
+  .sbarTEX{
+    position: absolute;
+    top: 197px;
+    left: 30px;
+    color: white;
+  }
+
+
+/* newslider section css   */
+.newslite{
+  background: rgba(88, 3, 148, 0.742);
+  height: 200px;
+}
+.newslid-input{
+  text-align: right;
+  margin-top: 75px;
+}
+.newslid-input input{
+  padding: 6px 61px;
+  border: none;
+  outline: none;
+}
+.newslite button{
+  padding: 6px 25px;
+    margin-left: -5px;
+    border: none;
+    outline: none;
+    background: rgb(126, 169, 126);
+}
+.newslid-text h2{
+  font-size: 45px;
+    color: white;
+}
+.newslid-text small{
+  font-size: 18px;
+}
+.newslid-text{
+  margin-top: 53px;
+}
+/* footer css style code */
+.footdiv2 a{
+  text-decoration: none;
+  color: gray;
+
+}
+.footdiv3 button:nth-child(1){
+  font-size: 22px;
+    font-weight: 700;
+  background: #fff;
+  padding: 4px 32px;
+    border: 2px solid green;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, .4);
+}
+
+ 
+.footdiv3 button:nth-child(2){
+  font-size: 22px;
+    font-weight: 700;
+  background: #c7ebc0;
+  padding: 4px 14px;
+    border: 2px solid green;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, .4);
+}
+.foot-button {
+   text-align: left; 
+
+}
+/* end of home page css style coding */
+/* end of home page css style coding */
+/* end of home page css style coding */
+/* end of home page css style coding */
+
+/* stsr of responsibe css */
+/* stsr of responsibe css */
+
+
+/* 
+header responsive code css*/
+
+ 
+ @media(max-width:1350px){
+  .feature h1 {
+    font-size: 33px;
+    letter-spacing: 2px;
+}
+  .container {
+ 
+}
+  .header {
+    padding: 5px;
+    
+}
+.menu-list ul li {
+   
+  margin-left: 24px;
+}
+.menu-list ul li a {
+   
+  font-size: 16px;
+   
+  
+}
+.menu-search input {
+  width: 230px;
+  padding: 5px;
+   
+  margin-bottom: 16px;
+}
+.menu-button button {
+   
+  width: 104px;
+} 
+/* banner responnsibe css start */
+ 
+ 
+.cardimg img {
+  margin-left: 20px;
+  
+}
+.card-heading {
+  font-size: 18px;
+}
+.caredtext small {
+  font-size: 25px;
+   
+}
+
+}
+
+
+
+
+ @media (max-width:1220px) {
+  .feature h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+
+  .cardimg img {
+    margin-left: 45px;
+    height: 200px;
+    width: auto;
+}
+.card-heading {
+  font-size: 14px;
+}
+.caredtext small {
+  font-size: 20px;
+}
+.menu-list ul li a {
+    
+  font-size: 15px;
+   
+}
+} 
+  @media (max-width:1190px) {
+
+  .container {
+     
+}
+
+
+.menu-search input {
+  width: 192px;
+   
+}
+ 
+}
+
+@media  (max-width:1100px) {
+  .container {
+   
+}
+  
+}  
+@media (max-width:1090px) {
+  .container {
+    
+}
+.menu-list ul li {
+  margin-left: 16px;
+}
+.menu-list ul li a {
+  font-size: 13px;
+}
+.menu-search input {
+  width: 182px;
+}
+/* banner responsive css code start */
+ 
+   
+ 
+}
+
+@media  (max-width:1045px) {
+  
+  .container {
+   
+}
+.menu-button button {
+  width: 81px;
+}
+.menu-search input {
+  width: 159px;
+}
+ 
+}
+ 
+@media (max-width:1000px) {
+
+  .container {
+     
+}
+.menu-list ul li {
+  margin-left: 15px;
+}
+.menu-list ul li a {
+  font-size: 13px;
+}
+.menu-search input {
+  width: 153px;
+  padding: 3px;
+}
+.menu-button button {
+  width: 84px;
+}
+/* this is banner sectinon css */
+.cardimg img {
+  margin-left: 85px;
+  height: 231px;
+  width: auto;
+  /* margin: auto; */
+}
+.card-heading {
+  font-size: 24px;
+}
+ 
+}
+@media  (max-width:1050px) {
+  .container {
+    
+}
+.menu-search input {
+  width: 150px;
+  padding: 2px;
+}
+.menu-button button {
+  width: 74px;
+}
+.menu-list ul li {
+  margin-left: 16px;
+}
+.menu-list ul li a {
+  font-size: 13px;
+}
+}
+@media (max-width:950px) {
+  .feature h1 {
+    font-size: 33px;
+    letter-spacing: 1px;
+}
+.feature small {
+  font-size: 17px;
+  color: gray;
+}
+  
+}
+@media  (max-width:980px) {
+   
+
+.rowy{
+  position: relative;
+}
+  .menu {
+    position: absolute;
+    top: 89px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.menu::before{
+  content: "";
+  width: 100%;
+  height: 300px;
+  background: lightblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.baricon {
+  display: inherit !important;
+    
+  position: absolute;
+  top: 10px;
+  left: 286px;
+}
+.banner-section {
+   
+  height: 354px;
+  background-position: bottom;
+}
+.bannerText p {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.bannerHeading1 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 32px;
+}
+.haf-tex p {
+  font-size: 15px;
+  font-weight: 300;
+   
+}
+  
+}
+
+/* @media  (max-width:1030px) {
+  .cardimg img {
+    margin-left: 0;
+  }
+  .caredtext small {
+    font-size: 21px;
+}
+.card-heading {
+  font-size: 15px;
+} */
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* stsr of responsibe css */
+/* stsr of responsibe css */
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,466 @@
+ <!doctype html>
+ <html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+ 
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        /> 
+    </head>
+    <style>
+        .big{
+                height: 393px;
+        width: 442px;
+        background: gainsboro;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        
+        }
+        .big img{
+            height: 90%;
+            width: 90%;
+            filter: drop-shadow(5px 4px 6px rgb(250, 250, 250));
+        }
+        .smallimg2{
+            display: flex;
+            justify-content:space-between;
+            width: 441px;
+            overflow: hidden;
+            position: relative;
+            transition: .5s cubic-bezier(0,0,0.11,0.45);
+            
+            
+            
+        }
+        .smallimg2 img:hover{
+            width: 150px;
+            height: 150px;
+        }
+        .smallimg2 img{
+            height: 140px ;
+            width: 140px;
+            margin-right: 10px;
+            transition: .5s;
+           background: gainsboro;
+           border-radius: 5px;
+           filter: drop-shadow(-3px 4px 6px rgb(250, 250, 250));
+           
+            
+            
+        
+        }
+        .next,.prev{
+            border: none;
+            background: none;
+        }
+        .next{
+            position: absolute;
+            top: 52px ;
+            left: 0;
+        }
+        .prev{
+            position: absolute;
+            top:  52px ;
+          right: 0;
+        }
+        .span{
+            background: #fff;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+          
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            box-shadow: 5px 4px 7px #e2dfdf;
+        }
+        .item{
+            
+            padding: 5px;
+            
+        }
+        .item p{
+            margin-bottom: 0;
+            font-size: 1.4rem;
+        }
+        .item img{
+            height: 200px;
+            width: 200px;
+
+
+        }
+        .item small{
+            font-size: 1rem;
+        }
+        .item button{
+            margin-top: 10px;
+            background:lightslategray;
+            padding: 5px;
+            border-radius: 4px;
+
+        }
+    .mainshop{
+        display: flex;
+          
+      column-gap: 30px;
+         
+    }
+.showShop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.crtimg{
+    height: 70px;
+    width: 70px;
+}
+.cart{
+    background: wheat;
+    display: flex;
+    flex-direction: column;
+     
+}
+    </style>
+ 
+    <body>
+        <section>
+            <div class="container">
+                  <div class="mainshop">
+                    <div class="showRoom">
+                        <div class="big"><img class="bigimg" src="c:\Users\windows 10\Pictures\images (9)T.png" alt=""></div>
+                    <div class="smallimg2">
+
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\images (6)T.png" alt=""></div>
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\images (9)T.png" alt=""></div>
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\images (7)T.png" alt=""></div>
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\images (2)T.png" alt=""></div>
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\images (7)T.png" alt=""></div>
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\download1---T.png" alt=""></div>
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\images (7)T.png" alt=""></div>
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\images (7)T.png" alt=""></div>
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\download (1)T.png" alt=""></div>
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\images (7)T.png" alt=""></div>
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\images (7)T.png" alt=""></div>
+                        <div  ><img  class="smaller"   src="c:\Users\windows 10\Pictures\images (7)T.png" alt=""></div>
+                        <button class="prev"><span class="span">></span></button>
+                        <button class="next"><span class="span"><</span></button>
+                        
+                    </div>
+             </div>
+             <div class="showShop">
+             </div>
+                  
+                  
+             <div class="cart">
+               
+             </div>  
+             <div>
+                total=
+                <h2 class="price">
+                     
+                </h2>
+            </div>
+            </div>
+        </section>
+         
+        
+
+
+
+
+
+
+
+        <script>
+        
+        let bigimg=document.querySelector(".bigimg");
+        let smallimg=document.querySelectorAll('.smaller');
+        let next=document.querySelector(".next");
+        let prev=document.querySelector(".prev");
+        let counter=0;
+        let cart=document.querySelector(".cart");
+         let crtarry=[];
+         let crtarry2=[];
+        let showshop =document.querySelector('.showShop');
+        let price=document.querySelector('.price');
+        let remov=document.querySelectorAll('.remov')
+
+
+    let Datas=[
+    {
+        "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+        "category": "Men's Sneaker",
+        "name": "ULTRABOOST 22 SHOES",
+        "seller": "Addidas",
+        "price": 420,
+        "stock": 20,
+        "ratings": 4,
+        "ratingsCount": 3725,
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+        "shipping": 1,
+        "quantity": 0
+    },
+    {
+        "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+        "category": "Men's Sneaker",
+        "name": "LUNAR NEW YEAR ULTRABOOST DNA SHOES",
+        "seller": "Addidas",
+        "price": 196,
+        "stock": 19,
+        "ratings": 5,
+        "ratingsCount": 4355,
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2cee64414e1f4f31baf1ae270099d950_9366/Lunar_New_Year_Ultraboost_DNA_Shoes_Black_GZ6074_01_standard.jpg",
+        "shipping": 14,
+        "quantity": 0
+    },
+    {
+        "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+        "category": "Men's Sneaker",
+        "name": "SUPERNOVA SHOES",
+        "seller": "Addidas",
+        "price": 245,
+        "stock": 20,
+        "ratings": 4,
+        "ratingsCount": 3972,
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/69cbc73d0cb846889f89acbb011e68cb_9366/Supernova_Shoes_Black_S42722_01_standard.jpg",
+        "shipping": 1,
+        "quantity": 0
+    },
+    {
+        "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+        "category": "Men's Sneaker",
+        "name": "LITE RACER ADAPT 3.0 SHOES",
+        "seller": "Addidas",
+        "price": 229,
+        "stock": 10,
+        "ratings": 5,
+        "ratingsCount": 1764,
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/96a5f085fedf4e678095abad01056711_9366/Lite_Racer_Adapt_3.0_Shoes_Black_FX8802_01_standard.jpg",
+        "shipping": 32,
+        "quantity": 0
+    },
+    {
+        "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+        "category": "Men's Sneaker",
+        "name": "4DFWD SHOES",
+        "seller": "Addidas",
+        "price": 287,
+        "stock": 11,
+        "ratings": 4,
+        "ratingsCount": 799,
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8c5d1994dfd343e28567ad4400dd351d_9366/4DFWD_Shoes_Black_Q46447_01_standard.jpg",
+        "shipping": 49,
+        "quantity": 0
+    },
+    {
+        "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+        "category": "Men's Sneaker",
+        "name": "KAPTIR 2.0 SHOES",
+        "seller": "Addidas",
+        "price": 138,
+        "stock": 19,
+        "ratings": 3,
+        "ratingsCount": 4372,
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0846e90b15144861b33dacf500e3cfd1_9366/Kaptir_2.0_Shoes_White_H00276_01_standard.jpg",
+        "shipping": 19,
+        "quantity": 0
+    },
+    {
+        "id": "9c0c13c2-54e4-4001-809b-afbd9d84037d",
+        "category": "Men's Sneaker",
+        "name": "4DFWD PULSE SHOES",
+        "seller": "Addidas",
+        "price": 226,
+        "stock": 1,
+        "ratings": 4,
+        "ratingsCount": 2870,
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9a8256bb7ca34da49ff8ad5600bb2812_9366/4DFWD_Pulse_Shoes_White_Q46221_01_standard.jpg",
+        "shipping": 15,
+        "quantity": 0
+    },
+    {
+        "id": "c9d1f410-d28f-49d9-9b01-d759b5acbeea",
+        "category": "Men's Sneaker",
+        "name": "ZX 1K BOOST SHOES",
+        "seller": "Addidas",
+        "price": 319,
+        "stock": 7,
+        "ratings": 4,
+        "ratingsCount": 1360,
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0e540bae86d5456aa034ada300ebf46c_9366/ZX_1K_Boost_Shoes_Grey_H00430_01_standard.jpg",
+        "shipping": 50,
+        "quantity": 0
+    },
+]
+
+
+Datas.map(pd=>{
+    let div=document.createElement('div');
+    div.classList.add('item');
+    div.innerHTML=`
+    <img src="${pd.img}" alt="">
+    <p>${pd.name.substring(0,9)+"...."}</p>
+    <b>price:${pd.price}$</b><br/>
+    <small>stock:${pd.stock}</small><br/>
+    <button class='itmbutton' id='${pd.id}'>add to cartf</button>
+
+    `
+    showshop.appendChild(div);
+
+
+    
+})
+let itmbutton=document.querySelectorAll('.itmbutton');
+itmbutton.forEach((product)=>{
+     
+product.addEventListener('click',(itm)=>{
+    let select=Datas.find(pd=>pd.id===itm.target.id)
+    let div=document.createElement('div');
+    div.classList.add('crtdiv');
+    div.innerHTML=`
+    <div>
+            <img src="${ select.name}" class='crtimg' alt="">
+            
+
+            <p>name:${ select.name.substring(0,5)+"..."}</p>
+            
+        <b>price:${ select.price}<br/>
+
+        <small>quantity:${ select.quantity}</small><br/>
+        <button  class='remov' id='${select.id}'>remove</button>
+    </div>
+         `
+   cart.appendChild(div);
+     crtarry.push(select);
+     let same=crtarry.indexOf((value)=>value.id==itm.target.id);
+      console.log(same)
+
+   
+
+
+
+
+
+
+
+     let total=crtarry.reduce((fast,second)=>fast+second.price,0);
+     price.innerHTML=total;
+  
+    
+     
+ });
+
+ 
+
+ 
+  
+
+ })
+
+  remov.forEach((rev)=>{
+    rev.addEventListener('click',()=>{
+        
+    })
+  })
+ 
+
+
+
+ 
+ 
+
+
+
+
+
+    
+            smallimg.forEach((small,index)=>{
+              small.addEventListener("click",()=>{
+                console.log(small.src)
+                bigimg.src=small.src;
+
+              });
+            })
+      
+    
+    
+
+                
+                  
+     
+        next.addEventListener("click",imgslid);
+        prev.addEventListener("click",imgslidbk);        
+
+
+        function imgslid(){
+            counter--;
+            if(counter<0){
+                counter=0;
+                imgslid();
+               
+            }
+            console.log(counter)
+            smallimg.forEach((smal)=>{
+                smal.style.transform=`translatex(-${counter*40}%)`
+
+         
+            
+        })
+
+             
+
+ 
+             
+        }
+        function imgslidbk(){
+              counter++;
+            if(counter>18){
+                counter=0;
+                imgslidbk();
+                
+            }
+            console.log(counter)
+            smallimg.forEach((smal,inex)=>{
+                smal.style.transform=`translatex(-${counter*40}%)`
+         
+            
+        })
+             
+ 
+           
+
+        }
+        
+        </script>
+        
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+ 
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+ </html>
+ 
